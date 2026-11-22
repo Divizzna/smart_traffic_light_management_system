@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">Admin Dashboard</div>
+  <button class="btn btn-secondary" onclick="logout()">Logout</button>
+</header>
+
+<main>
+  <section class="section admin-only">
+    <div class="card">
+      <h2 class="section-title">🧾 Download Data</h2>
+
+      <button class="btn btn-primary" id="downloadBookingsBtn">
+        Download Booking Details
+      </button>
+
+      <button class="btn btn-primary" id="downloadFeedbackBtn">
+        Download Feedback Details
+      </button>
+    </div>
+  </section>
+</main>
+
+<script src="scripts.js"></script>
+<script>
+if (localStorage.getItem("eventPlanersAdmin") !== "true") {
+  alert("Unauthorized access");
+  window.location.href = "index.html";
+}
+
+function logout() {
+  localStorage.removeItem("eventPlanersAdmin");
+  window.location.href = "index.html";
+}
+</script>
+
+
+
+
+</body>
+</html>

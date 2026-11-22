@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background:
+    linear-gradient(rgba(216, 194, 194, 0.45), rgba(255, 180, 180, 0.45)),
+    url("https://static.vecteezy.com/system/resources/thumbnails/024/676/211/small/event-light-andgrade-concept-christmas-wreath-bokeh-lights-over-dim-blue-establishment-creative-resource-ai-generated-photo.jpeg")
+    no-repeat fixed center/cover;
+  color: #222;
+}
+body {
+  color: #333;
+}
+
+
+
+/* HEADER + NAV */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ffb199);
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* LAYOUT */
+main {
+  padding: 20px;
+  max-width: 1150px;
+  margin: 0 auto 40px auto;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* HERO / INTRODUCTION */
+.hero-section {
+  padding-top: 10px;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 14px;
+}
+
+.hero-text {
+  flex: 1.3;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+}
+
+.hero-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-highlight {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  border-left: 5px solid #ff758c;
+}
+
+.hero-highlight h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.hero-highlight ul {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+.hero-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.hero-gallery img {
+  width: 100%;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* SECTION TITLES */
+.section-title {
+  margin-bottom: 15px;
+  border-left: 5px solid #ff758c;
+  padding-left: 10px;
+  font-size: 22px;
+}
+
+/* SERVICES GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.service-card {
+  background: #fff7fa;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.service-info {
+  padding: 10px 12px 12px 12px;
+}
+
+.service-info h3 {
+  margin-bottom: 4px;
+}
+
+.service-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.service-footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff4f7b;
+}
+
+/* CART SUMMARY UNDER SERVICES */
+.cart-summary {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff3cd;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* CONTACT SECTION */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* FORMS */
+label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* BUTTONS */
+.btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #ff758c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #ff4f7b;
+}
+
+.btn-secondary {
+  background: #eee;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #ddd;
+}
+
+/* When a service is added to cart */
+.add-cart-btn.added {
+  background: #4caf50;
+  color: #fff;
+  cursor: default;
+}
+.add-cart-btn.added:hover {
+  background: #4caf50;
+}
+
+/* TOTAL BOX */
+.total-box {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #e9ffe7;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* CART TABLE IN BOOKING */
+.cart-table-wrapper {
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.cart-table th {
+  background: #ffe5ec;
+}
+
+/* ADD SERVICE ROW */
+.add-service-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.add-service-row input[type="text"],
+.add-service-row input[type="number"] {
+  flex: 1;
+}
+
+/* SMALL TITLES */
+.small-title {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* RATING GROUP */
+.rating-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.rating-group input {
+  margin-right: 2px;
+}
+
+/* BOOKING & FEEDBACK MESSAGES */
+.booking-msg {
+  background: #e6fff0;
+  margin-top: 16px;
+}
+
+.final-msg {
+  background: #f0fff4;
+  margin-top: 15px;
+}
+
+/* HINT TEXT */
+.hint {
+  font-size: 12px;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  padding: 10px 0 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-service-row {
+    flex-direction: column;
+  }
+}
+/* Admin-only content (does not affect user flow) */
+.admin-only {
+  display: none;
+}

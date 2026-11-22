@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Planers - Event Management Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">Event Planers</div>
+  <nav class="nav-links">
+    <a href="#intro">Introduction</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+    <a href="#feedback">Feedback</a>
+    
+  </nav>
+</header>
+
+<main>
+
+  <!-- INTRODUCTION SECTION -->
+  <section id="intro" class="section">
+    <div class="card intro-card">
+      <h2 class="section-title">Welcome to Event Planners</h2>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Make Every Moment Memorable</h1>
+          <p class="tagline">
+            From intimate gatherings to grand celebrations, we bring your dreams to life.
+          </p>
+          <p>
+            We are <strong>Event Planers</strong> — your trusted partner for creating magical experiences.
+            We specialize in weddings, birthdays, house-warming, DJ nights, corporate events, fests and more.
+          </p>
+          <p>
+            Scroll down, choose our services, fill your details and confirm your booking in just a few steps.
+          </p>
+
+          <button class="btn btn-primary"
+                  onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+            Explore Services
+          </button>
+        </div>
+
+        <div class="hero-side">
+          <div class="hero-highlight">
+            <h2>Why Choose Us?</h2>
+            <ul>
+              <li><span class="dot wedding"></span> Creative & customised event themes</li>
+              <li><span class="dot party"></span> Friendly & professional team</li>
+              <li><span class="dot corporate"></span> On-time, stress-free execution</li>
+              <li><span class="dot dj"></span> Transparent pricing & clear communication</li>
+            </ul>
+          </div>
+
+          <div class="hero-gallery">
+            <img src="https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg">
+            <img src="https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section">
+    <div class="card services-card">
+      <h2 class="section-title">🎉 Our Services</h2>
+      <p class="section-subtitle">Choose your services and click Add to Cart.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <img src="https://www.thetamarindtree.in/wp-content/uploads/2024/09/SAL04106-1500x1000.jpg">
+          <div class="service-info">
+            <h3>💍 Wedding Planners</h3>
+            <p>Complete decoration, coordination and planning.</p>
+            <div class="service-footer">
+              <span class="price">₹80,000</span>
+              <button class="btn btn-secondary add-cart-btn"
+                      data-name="Wedding Planners"
+                      data-price="80000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://www.partyone.in/img/category_landing/artists/balloon_decor.webp">
+          <div class="service-info">
+            <h3>🎂 Birthday Party</h3>
+            <p>Decoration, cake table setup, fun games.</p>
+            <div class="service-footer">
+              <span class="price">₹20,000</span>
+              <button class="btn btn-secondary add-cart-btn"
+                      data-name="Birthday Party"
+                      data-price="20000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://admin.booktheparty.in/assets/images/decorations/6772cf737be0fce6397ccc2a1f9b28db.jpeg">
+          <div class="service-info">
+            <h3>🏠 House Warming</h3>
+            <p>Pooja setup, decoration, seating arrangement.</p>
+            <div class="service-footer">
+              <span class="price">₹25,000</span>
+              <button class="btn btn-secondary add-cart-btn"
+                      data-name="House Warming Ceremony"
+                      data-price="25000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg">
+          <div class="service-info">
+            <h3>🎧 DJ Nights</h3>
+            <p>Lighting, sound system, DJ setup.</p>
+            <div class="service-footer">
+              <span class="price">₹30,000</span>
+              <button class="btn btn-secondary add-cart-btn"
+                      data-name="DJ Nights"
+                      data-price="30000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://eventacademy.com/wp-content/uploads/2018/11/cambridge-corporate-photographer-io-2016-003.jpg">
+          <div class="service-info">
+            <h3>💼 Corporate Gathering</h3>
+            <p>Corporate meetings & conference setup.</p>
+            <div class="service-footer">
+              <span class="price">₹40000</span>
+              <button class="btn btn-secondary add-cart-btn"
+                      data-name="Corporate Gathering"
+                      data-price="40000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://www.cube3events.com/images/college-event.jpg">
+          <div class="service-info">
+            <h3>🎓 College / School Fests</h3>
+            <p>Stage, sound, lighting & coordination.</p>
+            <div class="service-footer">
+              <span class="price">₹35,000</span>
+              <button class="btn btn-secondary add-cart-btn"
+                      data-name="School / College Fests"
+                      data-price="35000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cart-summary">
+        <div class="cart-pill">Items in Cart: <span id="cartCount">0</span></div>
+        <div class="cart-pill">Current Total: <span id="cartTotalPreview">₹0</span></div>
+        <button class="btn btn-primary" id="goToBookingBtn">Proceed to Booking</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="section">
+    <div class="card testimonials-card">
+      <h2 class="section-title">💖 What Our Clients Say</h2>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial">
+          <p class="quote">“They made our wedding magical! Beautiful decoration and amazing coordination.”</p>
+          <p class="author">– Ananya & Rahul</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="quote">“Our college fest was perfectly organised. Best stage setup ever!”</p>
+          <p class="author">– CSE Dept</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="quote">“Very professional team. Our corporate meet went smoothly.”</p>
+          <p class="author">– ABC Corp</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section id="booking" class="section">
+    <div class="card booking-card">
+      <h2 class="section-title">📝 Booking Details</h2>
+
+      <form id="bookingForm">
+
+        <label>Full Name:</label>
+        <input type="text" id="custName">
+
+        <label>Phone Number:</label>
+<input type="text"
+       id="custPhone"
+       maxlength="10"
+       placeholder="Enter 10-digit mobile number"
+       oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+
+
+        <label>Email:</label>
+        <input type="email" id="custEmail">
+
+        <label>Address:</label>
+        <textarea id="custAddress"></textarea>
+
+        <label>Date of Event:</label>
+        <input type="date" id="eventDate">
+
+        <h3 class="small-title">Selected Services</h3>
+
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Sl. No</th>
+              <th>Service</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="cartBody"></tbody>
+        </table>
+
+        <div class="total-box">
+          Total: <span id="cartTotal">₹0</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+      </form>
+
+      <div id="bookingMessage" class="card booking-msg" style="display:none;"></div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="card contact-card">
+      <h2 class="section-title">📞 Contact Us</h2>
+
+      <p><strong>Phone:</strong> +91 99803 28606</p>
+      <p><strong>Email:</strong> eventplaners@gmail.com</p>
+      <p><strong>Address:</strong><br>
+        1st cross, 1st stage, kumaraswamy layout,<br>
+        Bengaluru, Karnataka 560078
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FEEDBACK SECTION -->
+  <section id="feedback" class="section">
+    <div class="card feedback-card">
+      <h2 class="section-title">⭐ Feedback & Rating</h2>
+
+      <form id="feedbackForm">
+
+        <label>Name:</label>
+        <input type="text" id="fbName">
+
+        <label>Email:</label>
+        <input type="email" id="fbEmail">
+
+        <label>Mobile Number:</label>
+<input type="text"
+       id="fbPhone"
+       maxlength="10"
+       placeholder="Enter 10-digit mobile number"
+       oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+
+
+        <label>Services you used:</label>
+        <textarea id="fbService"></textarea>
+
+        <label>Rating:</label>
+        <div class="rating-group">
+          <label><input type="radio" name="rating" value="1">1</label>
+          <label><input type="radio" name="rating" value="2">2</label>
+          <label><input type="radio" name="rating" value="3">3</label>
+          <label><input type="radio" name="rating" value="4">4</label>
+          <label><input type="radio" name="rating" value="5">5</label>
+        </div>
+
+        <label>Feedback:</label>
+        <textarea id="fbMsg"></textarea>
+
+        <button class="btn btn-secondary">Submit Feedback</button>
+      </form>
+
+      <div id="feedbackMessage" class="card final-msg" style="display:none;"></div>
+
+    </div>
+  </section>
+
+
+
+
+</main>
+
+<!-- FLOATING HELP BUTTON -->
+<div class="help-badge"
+     onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+  Need Help?
+</div>
+
+<footer>
+  © <span id="year"></span> Event Planers. All rights reserved.
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
